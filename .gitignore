@@ -21,3 +21,4 @@ Comb/*.py[co]
 *.swp
 *.vi
 *.zip
+*.gz
