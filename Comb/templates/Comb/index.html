@@ -6,8 +6,16 @@
 {% block content %}
 	
 	<div class="jumbotron">
-		<h1>Hello, Comb</h1>
-		<p>A comb is a toothed device used for styling, cleaning and managing hair and scalp.</p>
-		<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		<h1>Hello</h1>
+		<h2>Comb发布的500本书，你可以投票决定</h2>
+		<!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+	</div>
+
+	<div class="jumbotron">
+		<ul>
+			{% for author in authors %}
+				<li>{{ author.name }}</li>
+			{% endfor %}
+		</ul>
 	</div>
 {% endblock %}

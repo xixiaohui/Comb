@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
-
 from django.http import HttpResponse
+
+from Comb.models import Author
 
 # Create your views here.
 
@@ -11,6 +12,9 @@ from django.http import HttpResponse
 """
 def index(request):
 	# return HttpResponse("Hello,Comb!")
-	context={}
+	authors = Author.objects.all()
+	context={
+		"authors":authors,
+	}
 	
 	return render(request,'Comb/index.html',context)
