@@ -1,0 +1,54 @@
+
+
+{% extends "Broadcast/base.html" %}
+
+
+{% block content %}
+
+
+	<div class="jumbotron">
+		<h1>看广告，拿红包.</h1>
+		
+		<srong>平台功能说明：</srong>
+		
+
+		<p>
+			<u>广告主：可以发布广告</u>
+			1）编辑图片，添加文字，增加版面
+			2）设置投放时间
+			3）设置红包总金额
+		</p>
+		<p>
+			<u>红包分配方法:</u>
+			1）基数加随机数
+			2）标准统一
+			3）其他
+		</p>
+		<p>
+			<u>吃瓜群众：看广告领红包</u>
+			1）每天可以领取三次
+			2）点击广告，翻页查看，获取红包
+		</p>
+		<p>
+			<u>推广方法：</u>
+			1）扫码下载安装
+			2）分享二维码安装
+		</p>
+	</div>
+
+	<div>
+		<a href="broadmaster" class="btn btn-default btn-lg" role="button">广告主请点击</a>
+		<a href="commonpeople" class="btn btn-default btn-lg" role="button">吃瓜群众请点击</a>
+
+	</div>
+	
+
+	<!-- <div class="jumbotron">
+		<ul>
+			{% for author in authors %}
+				<li>{{ author.name }} {{ author.intro }}</li>
+
+			{% endfor %}
+		</ul>
+	</div> -->
+{% endblock %}

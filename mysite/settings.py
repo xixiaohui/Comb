@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'Broadcast',
     'Comb',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -57,6 +58,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             '/home/ubuntu/Desktop/mysite/Comb/templates/',
+            '/home/ubuntu/Desktop/mysite/Broadcast/templates/',
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -125,4 +127,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
     '/home/ubuntu/Desktop/mysite/Comb/static/Comb/',
+    '/home/ubuntu/Desktop/mysite/Broadcast/static/Broadcast/',
 ]

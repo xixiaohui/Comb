@@ -20,5 +20,7 @@ urlpatterns = [
 	
 	url(r'^',include('Comb.urls')),
 
+    url(r'^bro/',include('Broadcast.urls')),
+
     url(r'^admin/', admin.site.urls),
 ]

@@ -136,8 +136,6 @@
 				Author(作家)
 				Publisher(出版社)
 				ReasonForListing(上榜理由)
-				Booklist(书单列表)
-
-
+				
 			模板 (templates)
 				index.html(主页模板)

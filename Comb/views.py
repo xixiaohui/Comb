@@ -13,8 +13,9 @@ from Comb.models import Author
 def index(request):
 	# return HttpResponse("Hello,Comb!")
 	authors = Author.objects.all()
+
 	context={
-		"authors":authors,
+	"authors":authors,
 	}
 	
 	return render(request,'Comb/index.html',context)
